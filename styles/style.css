@@ -106,12 +106,24 @@ body{
 
 .field{
     width: 70%;
-    height: 40px;
+    height: 80px;
     margin: 0 auto;
     text-align: left;
+
+    border: 1px solid #060606;
+    display: flex;
+    gap: 2px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    background-color: #1a1a1a;
+
+}
+.inp1{
+    width: 80%;
 }
 #domain{
-    width: 85%;
+    width: 100%;
     background-color: #383737;
     color: white;
     border-radius: 8px;
@@ -177,7 +189,6 @@ body{
 
 @media screen and (max-width:576px) {
     .container{
-        min-width: 576px;
     }
    
     .list-parent{
