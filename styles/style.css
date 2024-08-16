@@ -84,6 +84,7 @@ body{
     margin: 0 auto;
     text-align: center;
     margin-top: 110px;
+
 }
 
 
@@ -129,7 +130,7 @@ body{
     background-color: #383737;
     color: white;
     border-radius: 8px;
-    font-size: 1.06rem;
+    font-size: 1.02rem;
     padding-left: 15px;
     border: none;
     height: 40px;
@@ -168,7 +169,6 @@ body{
 /* responsive tablet devices */
 
 @media screen  and (max-width:992px) {
-    
     .houndsec{
         font-size: 1.8rem;
        }
@@ -186,10 +186,19 @@ body{
     }
     .ham-menu{
         display: block;
+        font-size: 1.4rem;
+
     }
     .field{
-        width: 85%;
+        width: 80%;
         margin: 0 auto;
+    }
+    #domain{
+        font-size: 0.9rem;
+        padding-left: 8px;
+    }
+    #sub-btn{
+        font-size: 0.9rem;
     }
 
 }
@@ -198,6 +207,8 @@ body{
 /* responsive mobile devices  */
 
 @media screen and (max-width:576px) {
+    .container{
+    }
    .houndsec{
     font-size: 1.6rem;
    }
@@ -206,6 +217,7 @@ body{
     }
     .ham-menu{
         display: block;
+        font-size: 1.2rem;
     }
 
     .main-content{
@@ -221,6 +233,13 @@ body{
     .field{
         width: 95%;
         height: 70px;
+    }
+    #domain{
+        font-size: 0.8rem;
+        padding-left: 4px;
+    }
+    #sub-btn{
+        font-size: 0.8rem;
     }
 
 }
