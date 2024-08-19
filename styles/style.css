@@ -115,7 +115,6 @@ body{
 
     border: 1px solid #060606;
     display: flex;
-    gap: 2px;
     justify-content: center;
     align-items: center;
     border-radius: 5px;
@@ -129,7 +128,7 @@ body{
     width: 100%;
     background-color: #383737;
     color: white;
-    border-radius: 8px;
+    border-radius: 5px 0 0 5px;
     font-size: 1.02rem;
     padding-left: 15px;
     border: none;
@@ -139,8 +138,8 @@ body{
 .inp2{
     width: 70px;
     height: 40px;
-    border-radius: 8px;
 }
+
 
 #sub-btn{
     width: 100%;
@@ -148,14 +147,15 @@ body{
     background-color:#fa3b1e ; 
     color: #fff;
     border: none;
-    border-radius: 5px;
+    border-radius: 0 5px 5px 0;
     font-size: 1rem;
     cursor: pointer;
     transition: transform 0.1s ease-out ;
 }
 #sub-btn:hover{
-    transform: scale(1.06) translateX(3px);
-    background-color: #da4c00; 
+    transform: scale(1.03) translateX(2px);
+    background-color: #da4c00;
+    border-radius: 5px; 
 
 }
 
@@ -168,12 +168,14 @@ body{
 
 /* responsive tablet devices */
 
-@media screen  and (max-width:992px) {
+@media screen and (max-width:992px) {
+
     .houndsec{
         font-size: 1.8rem;
        }
     .main-content{
         width: 90%;
+        margin-top: 100px;
     }
     .list-parent{
         display: none;
@@ -195,7 +197,6 @@ body{
     }
     #domain{
         font-size: 0.9rem;
-        padding-left: 8px;
     }
     #sub-btn{
         font-size: 0.9rem;
@@ -207,7 +208,9 @@ body{
 /* responsive mobile devices  */
 
 @media screen and (max-width:576px) {
-    .container{
+
+    .nav-container{
+        margin-top: 55px;
     }
    .houndsec{
     font-size: 1.6rem;
@@ -217,12 +220,12 @@ body{
     }
     .ham-menu{
         display: block;
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 
     .main-content{
         width: 90%;
-        margin-top: 100px;
+        margin-top: 130px;
     }
     .info h1{
         font-size: 2.5rem;
@@ -240,6 +243,13 @@ body{
     }
     #sub-btn{
         font-size: 0.8rem;
+    }
+    .inp2{
+        width: 60px;
+        height: 40px;
+    }
+    .inp1{
+        width: calc(100% - 60px - 25px);
     }
 
 }
