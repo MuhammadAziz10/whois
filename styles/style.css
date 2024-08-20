@@ -21,7 +21,6 @@ body{
     padding: 0;
     text-decoration: none;
     list-style: none;
-
 }
 
 /* style the banner section  */
@@ -31,7 +30,7 @@ body{
     border: 1px solid black;
 }
 
-/* style the header section  */
+/* style the header nav section  */
 .nav-container{
     width: 75%;
     margin: 0 auto;
@@ -42,39 +41,23 @@ body{
     animation: nav-animation 0.4s ease-out 0s 1  ;
 }
 
-.list-parent{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 28px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 39px;
-    padding: 4px;
-}
-.list-parent a{
-    color:#FFFFFF;
-    font-size: 1.1rem;
-    font-weight: 200;
-    transition: transform 0.1s ease-out;
-}
-.list-parent a:hover{
-    color: #f15d0e;
-    font-size: 1.15rem;
-    text-decoration: underline;
-}
-
 .houndsec{
     font-size: 2rem;
     font-weight: 800;
     color: #ff4327;
 }
-.btn-primary{
-    border-radius: 42px;
-    background-color: #e6533c;
-    padding: 8px 20px 8px 20px;
+
+.btn-home{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+
 }
-.btn-primary:hover{
-    background-color: #373737;
+.btn-primary{
+    color:#FFFFFF;
+    font-size: 1.3rem;
+    font-weight: 300;
+    padding: 10px 20px 10px 20px;
+    display: block;
 }
 
 /* style the main section  */
@@ -87,10 +70,8 @@ body{
 
 }
 
-
 .info h1{
     font-size: 3rem;
-    display: inline-block;
 }
 
 .info h4{
@@ -102,8 +83,10 @@ body{
 }
 
 .eye{
-    color: #fa3b1e;
+    color: #ff4327;
+    font-weight: bolder;
 }
+
 
 /* style the form  */
 
@@ -159,37 +142,30 @@ body{
 
 }
 
-/* style the hamburger menu  */
-.ham-menu{
-    font-size: 1.5rem;
-    display: none;
-}
-
 
 /* responsive tablet devices */
 
 @media screen and (max-width:992px) {
 
+    .nav-container{
+        width: 80%;
+    }
     .houndsec{
         font-size: 1.8rem;
        }
+       .btn-primary{
+        font-size: 1.25rem;
+       }
+
+
     .main-content{
         width: 90%;
-        margin-top: 100px;
-    }
-    .list-parent{
-        display: none;
     }
     .info h1{
         font-size: 2.7rem;
     }
     .info h4{
         font-size: 1.4rem;
-    }
-    .ham-menu{
-        display: block;
-        font-size: 1.4rem;
-
     }
     .field{
         width: 80%;
@@ -210,19 +186,16 @@ body{
 @media screen and (max-width:576px) {
 
     .nav-container{
+        width: 85%;
         margin-top: 55px;
     }
    .houndsec{
     font-size: 1.6rem;
    }
-    .list-parent{
-        display: none;
-    }
-    .ham-menu{
-        display: block;
-        font-size: 1.3rem;
-    }
-
+   .btn-primary{
+    font-size: 1.1rem;
+    padding: 8px 17px;
+   }
     .main-content{
         width: 90%;
         margin-top: 130px;
